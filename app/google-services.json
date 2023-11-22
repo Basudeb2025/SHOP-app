@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "334463155528",
+    "project_id": "shooping-80f83",
+    "storage_bucket": "shooping-80f83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334463155528:android:0b2a70f934c84c9d8b477d",
+        "android_client_info": {
+          "package_name": "com.example.shooping"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc5jVIZKYPryKPMOwJnDjOAt5BTsKQ_40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

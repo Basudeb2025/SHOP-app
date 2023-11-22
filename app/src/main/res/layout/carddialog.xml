@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_211sdp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Item is added to card"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/green"
+        />
+    <Button
+        android:id="@+id/gocardbtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_51sdp"
+        android:text="Go there"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:backgroundTint="@color/purple_700"
+        />
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Account">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:id="@+id/frame"
+      >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_191sdp"
+        app:cardCornerRadius="@dimen/_11sdp"
+        app:cardElevation="@dimen/_21sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_1sdp"
+            >
+
+            <ImageView
+                android:id="@+id/dp"
+                android:layout_width="@dimen/_101sdp"
+                android:layout_height="129dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_13" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/profile_name"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_26sdp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="someone@gmail.com"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_14sdp"
+            />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+      <androidx.cardview.widget.CardView
+          android:id="@+id/sale"
+          android:layout_marginTop="@dimen/_41sdp"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_44sdp"
+          app:cardCornerRadius="@dimen/_11sdp"
+          app:cardElevation="@dimen/_21sdp"
+          android:layout_marginStart="@dimen/_6sdp"
+          android:layout_marginEnd="@dimen/_6sdp"
+          android:backgroundTint="@color/green"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Sale"
+              android:textSize="@dimen/_35sdp"
+              android:layout_gravity="center"
+              android:textStyle="bold"
+              android:textColor="@color/white"
+              />
+      </androidx.cardview.widget.CardView>
+      <RelativeLayout
+          android:id="@+id/la"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_41sdp"
+          >
+
+          <androidx.viewpager.widget.ViewPager
+              android:id="@+id/viewPager"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_200sdp" />
+      </RelativeLayout>
+  </LinearLayout>
+    <RelativeLayout
+        android:backgroundTint="@color/white"
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000">
+
+        <ProgressBar
+            android:id="@+id/loadingProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+</RelativeLayout>
+</FrameLayout>
